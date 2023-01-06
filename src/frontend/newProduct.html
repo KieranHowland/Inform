@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: Avenir-Next;
+      src: url(static/AvenirNext.otf)
+    }
+
+    body {
+      font-family: Avenir-Next, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    input {
+      transition: .2s;
+      font-family: Avenir-Next, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    div.logo > div.text {
+      text-align: left;
+    }
+
+    div.logo > div.text > p.title {
+      font-size: 20px;
+    }
+
+    form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
+  background-color: #00B1E7;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #00B1E7;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 16px;
+  background-color: white;
+  color: #00B1E7;
+}
+
+input[type="submit"] {
+  background-color: #0f8482;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 8px;
+}
+
+
+    input[type="submit"]:hover {
+      background-color: #109e9b;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div class="logo">
+      <img src="https://www.coop.co.uk/experience-library/images/examples/foundations/colours/app-512x512.png" alt="Logo">
+      <div class="text">
+        <p class="title">Inform</p>
+        <p class="page">Create Product</p>
+      </div>
+    </div>
+    <input type="text" id="upc" name="upc" placeholder="UPC">
+    <input type="text" id="sku" name="sku" placeholder="SKU">
+    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="number" id="price" name="price" placeholder="Price">
+    <input type="text" id="location" name="location" placeholder="Location">
+    <textarea id="description" name="description" placeholder="Description"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./static/styles/fonts.css">
+  <link rel="stylesheet" href="./static/styles/coop.css">
+  <script src="./static/js/queryUPC.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="logo">
+      <img src="./static/images/logo.png" alt="Logo">
+      <div class="text">
+        <p class="title">Inform</p>
+        <p class="page">Search by UPC</p>
+      </div>
+    </div>
+    <form id="form" onsubmit="event.preventDefault();" action="">
+      <div class="search">
+        <input type="text" id="search" name="search" placeholder="UPC">
+        <input type="submit" value="Search">
+      </div>
+    </form>
+    <div id="productContainer" class="productContainer" style="display: none">
+      <div class="product">
+        <img id="image" class="image" src="" alt="Placeholder image">
+        <div class="info">
+          <p id="name"></p>
+          <p id="description"></p>
+          <p id="price"></p>
+        </div>
+      </div>
+      <div id="buttons">
+        <button class="primary">Locate</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
